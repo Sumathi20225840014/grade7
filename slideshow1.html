@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>grade 7 coding challenge 8</title>
+    <style>
+        .slide {
+            float: left;
+            height: 700px;
+            width: 700px;
+            margin: 30px;
+        }
+        .slide-wrapper {
+            width: calc(900px * 4);
+            animation: slide 50s ease infinite;
+        }
+        .slide:nth-child(1) {
+            background-image: url("/flag.png");
+        }
+        .slide:nth-child(2){
+            background-image: url("/ashoka_chakra.png");
+        }
+        .slide:nth-child(3){
+            background-image: url("/taj.jpeg");
+        }
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-2700px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-wrapper">
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+    </div>
+</body>
+</html>
+

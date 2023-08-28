@@ -1,0 +1,31 @@
+.slideshow
+{
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideshow.img
+{
+width: 100%;
+height: auto;
+position: absolute;
+opacity: 0.5;
+animation-name: fade;
+animation-duration: 6s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+}
+
+.slideshow.img:first-child
+{
+    opacity: 1.8;
+}
+
+@keyframes fade{
+    0%{opacity: 0;}
+    20%{opacity: 1;}
+    80%{opacity: 1;}
+    100%{opacity: 0;}
+}
